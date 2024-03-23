@@ -11,16 +11,21 @@
       <div class="converter">
         <h2>Currency Converter</h2>
         <div class="input-group">
-          <input type="number" id="amount" placeholder="Enter amount" />
+          <input type="number" id="amount" placeholder="From Amount " />
           <select id="from"></select>
         </div>
         <div class="input-group">
-          <input type="text" id="result" readonly placeholder="test" />
+          <input type="text" id="result" readonly placeholder="To Amount" />
           <select id="to"></select>
         </div>
+        <p>Last Updated on:</p>
+        <p id="time"></p>
         <button onclick="convert()">Convert</button>
       </div>
+      <p class="api-link">Powered By:</p>
+      <P class="api-link"><a href="https://www.exchangerate-api.com/">ExchangeRate-API</a></P>
     </div>
+    
     <script src="code.js"></script>
     <script src="script.js"></script>
   </body>
