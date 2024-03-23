@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
-    <h1>Currency Converter</h1>
-  <p>Conversion made easy with APIs</p>
-
-  <input type="text" name="currency" id="currency">
-  <div class="dropdown">
-    <img class="img" src="https://flagsapi.com/NP/flat/64.png" 
-    alt="">
-    <img class="img" src="https://flagsapi.com/IN/flat/64.png"alt="">
-    <br>
-   From
-  <select name="from" class="option">
-      <option value="">NRs</option>
-      <option value="">INR</option>
-      <option value="">US</option>
-  </select>
- 
-   
- to
-  <select name="to" class="option">
-      <option value="">NRs</option >
-      <option value="">INR</option>
-      <option value="">US</option>
-  </select>
-  </div>
-  <button>Convert</button>
-  <h2>TEST</h2>
-  <script src="code.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter">
+        <h2>Currency Converter</h2>
+        <div class="input-group">
+          <input type="number" id="amount" placeholder="Enter amount" />
+          <select id="from"></select>
+        </div>
+        <div class="input-group">
+          <input type="text" id="result" readonly placeholder="test" />
+          <select id="to"></select>
+        </div>
+        <button onclick="convert()">Convert</button>
+      </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
